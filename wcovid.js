@@ -3,7 +3,7 @@ function getworlddata()
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': config.SECRET_API_KEY,
+            'X-RapidAPI-Key':'a41f336137mshe0b323dcafdcf12p165728jsn37884ff09b81',
             'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
         }
     };
@@ -38,7 +38,7 @@ function getworlddata()
         .catch(err => console.error(err));
 }
 
-// getworlddata()
+getworlddata()
 
 
 function search_wdata()
@@ -47,7 +47,7 @@ function search_wdata()
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': config.SECRET_API_KEY,
+            'X-RapidAPI-Key': 'a41f336137mshe0b323dcafdcf12p165728jsn37884ff09b81',
             'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
         }
     };
