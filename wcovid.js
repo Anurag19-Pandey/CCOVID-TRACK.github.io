@@ -67,7 +67,7 @@ function search_wdata()
         if(data.countries_stat[i].country_name === s){
              back.style.display = "inline-block"
              let wcovid = `  
-             <div class="col-6">
+             <div class="col-sm-12 col-md-6 col-lg-4">
              <div class="card mt-4"  id="card">
              <h5 class="card-header bg-warning text-white">${data.countries_stat[i].country_name}</h5>
              <div class="card-body text-center bg-dark text-white">
