@@ -38,7 +38,7 @@ function vaccinedata()
         {
         if(data[property].All.country === s){
              back.style.display = "inline-block"
-            let vacc = ` <div class="col-3">
+            let vacc = ` <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card mt-4">
             <a href="https://en.wikipedia.org/wiki/${data[property].All.country}" style="text-decoration:none;"><h5 class="card-header bg-primary text-white">${data[property].All.country}</h5></a>
             <div class="card-body  bg-dark text-white">
