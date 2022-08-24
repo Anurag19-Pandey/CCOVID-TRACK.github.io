@@ -18,8 +18,26 @@ function vaccinedata()
              </div>` 
              wvaccine+=vacc;
              va.innerHTML = wvaccine;
+             
              }
+    }).catch(()=>{
+        const va = document.getElementById("vaccine");
+        let wvaccine = "";
+        let vacc = `<div class="loader">
+                    <div class="loader_img">
+                     <img src="./images/loader.gif">
+                     <div>
+                     <div class="loader_content">
+                     <p>Loading... (If takes time Please,Check your Internet Connection or refresh the page)</p>
+                     <div>
+                     <div>
+                     ` 
+          wvaccine+=vacc;
+          va.innerHTML = wvaccine;
+
     })
+        
+    
 }
   vaccinedata()
 
@@ -58,9 +76,24 @@ function vaccinedata()
         //   return vacc;
         }
 
-        
+    
         
     }
+    }).catch(()=>{
+        const va = document.getElementById("vaccine");
+        let wvaccine = "";
+        let vacc = `<div class="loader">
+        <div class="loader_img">
+         <img src="./images/loader.gif">
+         <div>
+         <div class="loader_content">
+         <p>Loading... (If takes time Please, Check your Internet Connection or refresh the page)</p>
+         <div>
+         <div>
+          ` 
+          wvaccine+=vacc;
+          va.innerHTML = wvaccine;
+
     })
     
 } 
