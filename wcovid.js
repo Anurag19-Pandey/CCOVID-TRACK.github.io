@@ -3,7 +3,7 @@ function getworlddata()
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key':'a41f336137mshe0b323dcafdcf12p165728jsn37884ff09b81',
+            'X-RapidAPI-Key': 'a41f336137mshe0b323dcafdcf12p165728jsn37884ff09b81',
             'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
         }
     };
@@ -33,9 +33,25 @@ function getworlddata()
                 </div>`
          covid+=wcovid;        
          world.innerHTML = covid;
+        
              }
         })
-        .catch(err => console.error(err));
+        .catch(()=>{
+            const world = document.getElementById("card_col");
+            let covid= "";
+            let wcovid = `
+            <div class="loader">
+            <div class="loader_img">
+             <img src="./images/loader.gif">
+             <div>
+             <div class="loader_content">
+             <p>Loading... (If takes time Please,Check your Internet Connection or refresh the page)</p>
+             <div>
+             <div>
+                         `                
+         covid+=wcovid;        
+         world.innerHTML = covid
+        });
 }
 
 getworlddata()
@@ -85,6 +101,21 @@ function search_wdata()
 
         }
     }
+    }).catch(()=>{
+        const world = document.getElementById("card_col");
+        let covid= "";
+        let wcovid = `  
+        <div class="loader">
+            <div class="loader_img">
+             <img src="./images/loader.gif">
+             <div>
+             <div class="loader_content">
+             <p>Loading... (If takes time Please,Check your Internet Connection or refresh the page)</p>
+             <div>
+             <div>
+     ` 
+     covid+=wcovid;
+     world.innerHTML = covid;
     })
     
 } 
